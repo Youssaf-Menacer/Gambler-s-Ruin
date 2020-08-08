@@ -62,16 +62,16 @@ if "../" not in sys.path:
 
         return policy, V
 
-policy, v = value_iteration_for_gamblers(0.4,100) # you can choose N as the 
+     policy, v = value_iteration_for_gamblers(0.4,100) # you can choose N as the 
                                                   # second argument of the 
                                                    # function
-print("Optimized Policy:")
-print(policy)
-print("")
+     print("Optimized Policy:")
+     print(policy)
+     print("")
 
-print("Optimized Value Function:")
-print(v)
-print("")
+     print("Optimized Value Function:")
+     print(v)
+     print("")
 
 
 # Plotting Value Funtion & Final Policy
@@ -79,11 +79,11 @@ print("")
 # x axis values
 
 x = range(100) # because N=100
-# corresponding y axis values
+# corresponding y axis values     
 y = policy
 # plotting the bars
-plt.bar(x, y, align='center', alpha=0.5)
-# the x axis
+plt.bar(x, y, align='center', alpha=0.5)  # I could not plot (x,v) together with (x,y)
+# the x axis                              # y= policy and v= value function
 plt.xlabel('Capital')
 # the y axis
 plt.ylabel('Final policy (stake)')
